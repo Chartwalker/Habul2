@@ -1,0 +1,27 @@
+{
+  "extensionName": {
+    "message": "HabuL2",
+    "description": "kämpfe gegen Spam, melde ihn!"
+  },
+
+  "extensionDescription": {
+    "message": "Benachrichtigt den Benutzer über Linkklicks",
+    "description": "Description of the extension."
+  },
+
+  "notificationTitle": {
+    "message": "Klickbenachrichtigung",
+    "description": "Title of the click notification."
+  },
+
+  "notificationContent": {
+    "message": "Du hast $URL$ angeklickt",
+    "description": "Tells the user which link they clicked.",
+    "placeholders": {
+      "url" : {
+        "content" : "$1",
+        "example" : "https://developer.mozilla.org"
+      }
+    }
+  }
+}

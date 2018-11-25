@@ -1,0 +1,36 @@
+{
+
+  "manifest_version": 2,
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "version": "0v1r1a",
+   "author": "Chartwalker at Github",
+  "homepage_url": "https://github.com/Chartwalker/Habul2",
+  "legacy": true,
+  "applications": {
+    "gecko": {
+      "id": "@XPI_EM_ID@",
+      "strict_min_version": "@THUNDERBIRD_VERSION@"
+    }
+  },
+  "icons": {
+    "72": "skin/icon.png"
+  },
+
+  "permissions": ["notifications"],
+
+  "background": {
+    "scripts": ["background-script.js"]
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"]
+    }
+  ],
+  
+  "default_locale": "de"
+}
+
+
