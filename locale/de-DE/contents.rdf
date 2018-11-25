@@ -4,14 +4,14 @@
 
   <!-- list all the skins being supplied by this package -->
   <RDF:Seq about="urn:mozilla:locale:root">
-    <RDF:li resource="urn:mozilla:locale:en-US"/>
+    <RDF:li resource="urn:mozilla:locale:de-DE"/>
   </RDF:Seq>
 
   <!-- locale information -->
-  <RDF:Description about="urn:mozilla:locale:en-US">
+  <RDF:Description about="urn:mozilla:locale:de-DE">
     <chrome:packages>
-      <RDF:Seq about="urn:mozilla:locale:en-US:packages">
-        <RDF:li resource="urn:mozilla:locale:en-US:habul"/>
+      <RDF:Seq about="urn:mozilla:locale:de-DE:packages">
+        <RDF:li resource="urn:mozilla:locale:de-DE:habul2"/>
       </RDF:Seq>
     </chrome:packages>
   </RDF:Description>
