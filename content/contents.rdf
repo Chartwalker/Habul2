@@ -3,16 +3,16 @@
 
   <!-- list all the packages being supplied by this jar -->
   <RDF:Seq about="urn:mozilla:package:root">
-    <RDF:li resource="urn:mozilla:package:habul"/>
+    <RDF:li resource="urn:mozilla:package:habul2"/>
   </RDF:Seq>
 
   <!-- package information -->
-  <RDF:Description about="urn:mozilla:package:habul"
-        chrome:displayName="HabuL"
-        chrome:author="legolas558"
-        chrome:name="habul"
+  <RDF:Description about="urn:mozilla:package:habul2"
+        chrome:displayName="HabuL2"
+        chrome:author="chartwalker"
+        chrome:name="habul2"
         chrome:description="Reports spam to various spam hunting facilities" 
-        chrome:settingsURL="chrome://habul/content/options.xul"
+        chrome:settingsURL="chrome://habul2/content/options.xul"
         chrome:extension="true">
   </RDF:Description>
 
@@ -23,10 +23,10 @@
   </RDF:Seq>
 
   <RDF:Seq about="chrome://global/content/customizeToolbar.xul">
-    <RDF:li>chrome://habul/content/toolbar.xul</RDF:li>
+    <RDF:li>chrome://habul2/content/toolbar.xul</RDF:li>
   </RDF:Seq>
 
   <RDF:Seq about="chrome://messenger/content/messenger.xul">
-    <RDF:li>chrome://habul/content/messenger.xul</RDF:li>
+    <RDF:li>chrome://habul2/content/messenger.xul</RDF:li>
   </RDF:Seq>
 </RDF:RDF>
