@@ -7,12 +7,6 @@
    "author": "Chartwalker at Github",
   "homepage_url": "https://github.com/Chartwalker/Habul2",
   "legacy": true,
-  "applications": {
-    "gecko": {
-      "id": "@XPI_EM_ID@",
-      "strict_min_version": "@THUNDERBIRD_VERSION@"
-    }
-  },
   "icons": {
     "72": "skin/icon.png"
   },

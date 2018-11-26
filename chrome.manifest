@@ -1,6 +1,8 @@
-content	habul2 jar:chrome/habul2.jar!/content/
-locale	habul2	de-DE	jar:chrome/habul2.jar!/locale/de-DE/
-skin	habul2	classic/1.0	jar:chrome/habul2.jar!/skin/
+content	habul2 jar:chrome/habul2-0v1r1a.xpi!/content/
+locale	habul2	de_DE	jar:chrome/habul2-0v1r1a.xpi!/_locales/de_DE/
+locale	habul2	it_IT	jar:chrome/habul2-0v1r1a.xpi!/_locales/it_IT/
+locale	habul2	en_US	jar:chrome/habul2-0v1r1a.xpi!/_locales/en_US/
+skin	habul2	classic/1.0	jar:chrome/habul2-0v1r1a.xpi!/skin/
 
-overlay	chrome://messenger/content/messenger.xul	chrome://habul/content/messenger.xul
-style	chrome://global/content/customizeToolbar.xul	chrome://habul/skin/habul2.css
+overlay	chrome://messenger/content/messenger.xul	chrome://habul2/content/messenger.xul
+style	chrome://global/content/customizeToolbar.xul	chrome://habul2/skin/habul2.css

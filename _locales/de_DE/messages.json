@@ -1,22 +1,22 @@
 {
   "extensionName": {
     "message": "HabuL2",
-    "description": "kämpfe gegen Spam, melde ihn!"
+    "description": "kaempfe gegen Spam - melde Spam"
   },
 
   "extensionDescription": {
-    "message": "Benachrichtigt den Benutzer über Linkklicks",
+    "message": "Benachrichtigt den Benutzer ueber Linkklicks",
     "description": "Description of the extension."
   },
 
   "notificationTitle": {
     "message": "Klickbenachrichtigung",
-    "description": "Title of the click notification."
+    "description": "Titel der Klickbenachrichtigung."
   },
 
   "notificationContent": {
     "message": "Du hast $URL$ angeklickt",
-    "description": "Tells the user which link they clicked.",
+    "description": "Teil dem Nutzer mit welcher Links geclickt wurde.",
     "placeholders": {
       "url" : {
         "content" : "$1",
