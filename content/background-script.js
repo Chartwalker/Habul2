@@ -9,7 +9,7 @@ function notify(message) {
   var content = browser.i18n.getMessage("notificationContent", message.url);
   browser.notifications.create({
     "type": "basic",
-    "iconUrl": browser.extension.getURL("skin/icon.png"),
+    "iconUrl": browser.extension.getURL("chrome/skin/icon.png"),
     "title": title,
     "message": content
   });

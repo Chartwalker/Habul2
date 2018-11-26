@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<?xml-stylesheet href="chrome://habul2/skin/habul2.css" type="text/css"?>
-<!DOCTYPE overlay SYSTEM "chrome://habul2/locale/habul2.dtd">
+<?xml-stylesheet href="chrome://habul2/chrome/skin/habul2.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://habul2/locale/habul2/habul2.dtd">
 
 <overlay id="okopipiTbOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
