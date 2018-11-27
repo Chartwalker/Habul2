@@ -1,15 +1,17 @@
 {
 
   "manifest_version": 2,
-  "name": "__MSG_extensionName__",
-  "description": "__MSG_extensionDescription__",
+  "name": "Habul 2",
+  "description": "fight agains spam - report it now!",
   "version": "0.1.1",
    "author": "Chartwalker at Github",
   "homepage_url": "https://github.com/Chartwalker/Habul2",
   "icons": {
-    "72": "chrome/skin/icon.png"
+    "72": "chrome/skin/icon-72.png",
+    "48": "chrome/skin/icon-48.png",
+    "24": "chrome/skin/icon-24.png"
   },
-
+  
   "permissions": ["notifications"],
 
   "background": {
@@ -23,7 +25,11 @@
     }
   ],
   
+  "applications": {
+  "gecko": {
+    "id": "chartwalker-habul2@example.com"
+  }
+  },
+  
   "default_locale": "de_DE"
 }
-
-
