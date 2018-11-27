@@ -1,0 +1,16 @@
+{
+  "addons": {
+    "habul2@example.com": {
+      "updates": [
+        { "version": "0.0,1",
+          "update_link": "https://example.com/habul2-0.0.1.xpi" },
+         { "version": "0.0,1",
+          "update_link": "https://example.com/habul2-0.0.2.xpi" },
+        { "version": "0.3",
+          "update_link": "https://example.com/habul2-0.0.3.xpi",
+          "applications": {
+            "gecko": { "strict_min_version": "60" } } }
+      ]
+    }
+  }
+}
