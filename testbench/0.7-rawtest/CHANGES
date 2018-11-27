@@ -1,0 +1,6 @@
+CHANGES (newest entries on top with timestamp like ddmmyy hhmm)
+
+251118 1716 
+* because of the reimplementation old bugs are not tracked here until a new buf occour with the same behaviour as the old one.
+* the main namespace is habul2 - it would be changed after the initial cimitt
+* all initial commits are raw imports to keep tracking any changes, same procedure as untranslated locales
