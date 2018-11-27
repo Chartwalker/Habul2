@@ -12,7 +12,7 @@
     "24": "chrome/skin/icon-24.png"
   },
   
-  "permissions": ["notifications"],
+  "permissions": ["notifications", "storage"],
 
   "background": {
     "scripts": ["background-script.js"]
