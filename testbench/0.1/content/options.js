@@ -1,5 +1,5 @@
 /** 
- *	HabuLOptions namespace
+ *	HabuL2Options namespace
  */
 if ("undefined" == typeof(HabuL2Options)) {
 	var HabuL2Options = {
