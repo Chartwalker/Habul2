@@ -1,28 +1,21 @@
-/*
-Listen for messages from the page.
-If the message was from the page script, show an alert.
-*/
-window.addEventListener("message", (event) => {
-  if (event.source == window &&
-      event.data &&
-      event.data.direction == "from-page-script") {
-    alert("Content script received message: \"" + event.data.message + "\"");
-  }
-});
 
 /*
-Send a message to the page script.
+If the click was on a link, send a message to the background page.
+The message contains the link's URL.
 */
-function messagePageScript() {
-  window.postMessage({
-    direction: "from-content-script",
-    message: "Message from the content script"
-  }, "https://mdn.github.io");
+function notifyExtension(e) {
+  var target = e.target;
+  while ((target.tagName != "A" || !target.href) && target.parentNode) {
+    target = target.parentNode;
+  }
+  if (target.tagName != "A")
+    return;
+
+  console.log("content script sending message");
+  browser.runtime.sendMessage({"url": target.href});
 }
 
 /*
-Add messagePageScript() as a listener to click events on
-the "from-content-script" element.
+Add notifyExtension() as a listener to click events.
 */
-var fromContentScript = document.getElementById("from-content-script");
-fromContentScript.addEventListener("click", messagePageScript);
+window.addEventListener("click", notifyExtension);

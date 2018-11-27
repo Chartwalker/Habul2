@@ -1,0 +1,136 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://chrome/skin/habul2.css" type="text/css"?>
+<!DOCTYPE dialog SYSTEM "chrome://chrome/locale/habul2/habul2.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        onload="HabuL2Options.initOptions();"
+        buttons="accept,cancel"
+        ondialogaccept="HabuL2Options.savePrefs();"
+        persist="screenX screenY"
+        title="HabuL2 Project">
+
+    <script type="application/x-javascript" src="chrome://content/options.js"/>
+
+  <tabbox flex="1" style="margin:5px">
+    <tabs id="prefTabBox">
+      <tab id="basicTab"  label="&habul2.options.basictab.label;"/>
+      <tab id="SCTab"  label="&habul2.options.sctab.label;"/>
+      <tab id="USTab"  label="&habul2.options.ustab.label;"/>
+      <tab id="AUTab"  label="&habul2.options.autab.label;"/>
+      <tab id="knujontab" label="&habul2.options.knujontab.label;"/>
+    </tabs>
+<tabpanels flex="1">
+
+<!--Basic Options-->
+ <vbox id="basicTab" flex="1">
+  <label control="okcustid" value="&habul2.options.cidLabel;"/>
+  <textbox id="okcustid" value="" prefstring="habul2.okcustid" tooltiptext="&habul2.options.okcustidtooltip;"/>
+
+  <label control="action" value="&habul2.options.actionLabel;"/>
+  <radiogroup id="action" prefstring="habul2.action">
+    <radio id="leave" label="&habul2.options.actionLeave;"/>
+    <radio id="delete" label="&habul2.options.actionDelete;"/>
+    <radio id="trash" selected="true" label="&habul2.options.actionTrash;"/>
+  </radiogroup>
+ <!-- Disabled for release of 1.8.6.1 to fix knujon id   
+    <rows>
+     <row align="center">
+      <radio id="moveTargetMode1" oncommand="conditionallyEnableUI('moveOnSpam')" value="1" label="&otherFolder.label;"/>
+        <menulist id="actionTargetFolder"/>
+     </row>
+    </rows> 
+  </radiogroup>
+                <checkbox id="moveOnSpam" oncommand="conditionallyEnableUI('moveOnSpam')" label="&move.label;"/>
+                <radiogroup id="moveTargetMode">
+                  <grid class="specialFolderPickerGrid">
+                    <columns>
+                      <column flex="1"/>
+                      <column flex="1"/>
+                    </columns>
+                    <rows>
+                      <row align="center">
+                        <radio id="moveTargetMode1" oncommand="conditionallyEnableUI('moveOnSpam')"
+                                     value="1" label="&otherFolder.label;"/>
+                            <menulist id="actionTargetFolder"/>
+                      </row>
+                    </rows>
+                  </grid>
+                </radiogroup>
+-->
+ </vbox>
+
+<!--Spam Cop Tab -->
+  <vbox id="SCTab" flex="1">
+        <checkbox id="okspamcop"
+                preftype="bool"
+                prefstring="habul2.okspamcop"
+                label="&habul2.options.okspamcop;"
+                tooltiptext="&habul2.options.okspamcoptooltip;" />
+    <groupbox id="spamcop-box" >
+	<image id="options_img"/>
+	<caption label="SpamCop Options" />
+	<label control="okuserid" value="&habul2.options.idLabel;"/>
+	<textbox id="okuserid" value="" prefstring="habul2.okuserid" tooltiptext="&habul2.options.scidtooltip;" />
+        <checkbox id="quickspamcop"
+                preftype="bool"
+                prefstring="habul2.quickspamcop"
+                label="&habul2.options.quickspamcop;"
+                tooltiptext="&habul2.options.quickspamcoptooltip;" />
+    </groupbox>
+   </vbox>
+
+<!--US Reporting Tab-->
+<vbox id="USTab">
+        <checkbox id="usareports"
+                preftype="bool"
+                prefstring="habul2.usareports"
+                label="&habul2.options.usareports;"
+                tooltiptext="&habul2.options.usareportstooltip;" />
+ <groupbox id="report-box" >
+        <caption label="American Reporting" />
+        <checkbox id="ftcreports"
+                preftype="bool"
+                prefstring="habul2.ftcreports"
+                label="&habul2.options.ftcreports;" 
+                tooltiptext="&habul2.options.ftcreportstooltip;" />
+
+        <checkbox id="fdareports"
+                preftype="bool"
+                prefstring="habul2.fdareports"
+                label="&habul2.options.fdareports;"
+                tooltiptext="&habul2.options.fdareportstooltip;" />
+  </groupbox>
+ </vbox>
+
+<!--AU Reporting Tab-->
+<vbox id="AUTab">
+        <checkbox id="aureports"
+                preftype="bool"
+                prefstring="habul2.aureports"
+                label="&habul2.options.aureports;"
+                tooltiptext="&habul2.options.aureportstooltip;" />
+ <groupbox id="report-box" >
+        <caption label="Australian Reporting" />
+	  <label control="okacmaId" value="&habul2.options.acmaidLabel;"/>
+	  <textbox id="okacmaId" value="anonymous" prefstring="habul2.okacmaId" tooltiptext="&habul2.options.acmaidtooltip;"/>
+  </groupbox>
+ </vbox>
+
+<!--KnuJon Options knujonuserid -->
+<vbox id="knujontab">
+	<checkbox id="knujonreports"
+                preftype="bool"
+                prefstring="habul2.knujonreports"
+                label="&habul2.options.knujonreports;"
+                tooltiptext="&habul2.options.knujonreportstooltip;" />
+ <groupbox id="report-box" >
+        <caption label="KnujOn Reporting" />
+          <label control="knujonuserId" value="&habul2.options.knujonuseridLabel;"/>
+          <textbox id="knujonuserId" value="knujon" prefstring="habul2.knujonuserId" tooltiptext="&habul2.options.knujonuseridtooltip;"/>
+  </groupbox>
+</vbox>
+
+    </tabpanels>
+  </tabbox>
+</dialog>
