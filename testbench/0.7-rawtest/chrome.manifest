@@ -1,0 +1,3 @@
+content     habul2    content/
+
+overlay chrome://messenger/content/messenger.xul chrome://habul2/content/habul2.xul
